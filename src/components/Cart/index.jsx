@@ -8,6 +8,7 @@ function Cart({ cart, removeProductCart, removeAllProductsCart }) {
     const totalValue = cart.reduce((acc, cur) => {
       return acc + cur.price;
     }, 0);
+
     return (
       <div className="div-value">
         <p>
@@ -50,6 +51,7 @@ function Cart({ cart, removeProductCart, removeAllProductsCart }) {
         <h3>Carrinho de Compras</h3>
         <ul>{listProductsCard()}</ul>
         {someValueProducts()}
+        {localStorage.setItem("cartUser", JSON.stringify(cart))}
       </Aside>
     );
   } else {

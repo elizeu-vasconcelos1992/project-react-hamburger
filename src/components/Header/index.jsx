@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.svg";
 import { Container } from "./style";
 
-function Header({ search, setSearch }) {
+function HeaderContainer({ search, setSearch }) {
   return (
     <Container>
       <img src={logo} alt="logo marca" />
@@ -18,4 +18,4 @@ function Header({ search, setSearch }) {
   );
 }
 
-export default Header;
+export default HeaderContainer;

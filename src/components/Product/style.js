@@ -14,6 +14,12 @@ export const ListCard = styled.ul`
     align-items: center;
     border: 0.125rem solid #e0e0e0;
     border-radius: 0.313rem;
+    transition: 0.5s;
+  }
+
+  li:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px 1px rgba(39, 174, 96, 0.75);
   }
 
   .div-img {
@@ -81,5 +87,10 @@ export const ListCard = styled.ul`
     width: 90%;
     flex-wrap: nowrap;
     overflow-x: auto;
+
+    li:hover {
+      transform: none;
+      box-shadow: none;
+    }
   }
 `;
